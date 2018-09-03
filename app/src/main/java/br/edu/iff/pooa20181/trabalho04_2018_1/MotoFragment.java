@@ -237,7 +237,7 @@ public class MotoFragment extends Fragment {
                                             "SiglaCombustivel: "+veiculo.getSiglaCombustivel();
 
                             dialog = new AlertDialog.Builder(MotoFragment.this.ctx);
-                            dialog.setTitle("Motos Pesquisada");
+                            dialog.setTitle("Moto Pesquisada");
                             dialog.setMessage(message);
                             dialog.setNeutralButton("OK",null);
                             dialog.show();

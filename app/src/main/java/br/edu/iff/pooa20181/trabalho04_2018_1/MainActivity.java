@@ -8,36 +8,20 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnCarro, btnMoto, btnCaminhao;
+    private Button btnSearch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.btnCarro = findViewById(R.id.btnCarro);
-        this.btnMoto = findViewById(R.id.btnMoto);
-        this.btnCaminhao = findViewById(R.id.btnCaminhao);
+        this.btnSearch = findViewById(R.id.btnCarro);
 
-        this.btnCarro.setOnClickListener(new View.OnClickListener() {
+        this.btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,SearchActivity.class);
                 startActivity(intent);
-                //MainActivity.this.finish();
-            }
-        });
-
-        this.btnMoto.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
-        this.btnCaminhao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
             }
         });
