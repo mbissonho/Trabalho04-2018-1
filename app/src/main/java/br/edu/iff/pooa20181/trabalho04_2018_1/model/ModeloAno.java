@@ -1,4 +1,4 @@
-package br.edu.iff.pooa20181.trabalho04_2018_1;
+package br.edu.iff.pooa20181.trabalho04_2018_1.model;
 
 import java.util.List;
 
