@@ -14,7 +14,7 @@ public interface FIPEUserAPI {
     Call<List<Marca>> getMarcas(@Path("tipo") String tipo);
 
     @GET("{tipo}/marcas/{codigo}/modelos")
-    Call<List<Modelo>> getModelos(@Path("tipo") String tipo, @Path("codigo") int codigo);
+    Call<ModeloAno> getModelos(@Path("tipo") String tipo, @Path("codigo") String codigo);
 
     public static final Retrofit retrofit = new Retrofit.Builder()
             .baseUrl("https://parallelum.com.br/fipe/api/v1/")
