@@ -27,7 +27,25 @@ public class SearchActivity extends AppCompatActivity {
         this.typeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(SearchActivity.this,"Selecionou!",Toast.LENGTH_LONG).show();
+
+                if(position == 0){
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.fragmentArea, new CarroFragment())
+                            .commit();
+                }else if(position == 1){
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.fragmentArea, new MotoFragment())
+                            .commit();
+                }else{
+                    getSupportFragmentManager()
+                            .beginTransaction()
+                            .add(R.id.fragmentArea, new CaminhaoFragment())
+                            .commit();
+                }
+
+                Toast.makeText(SearchActivity.this,"Selecionou: "+position,Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -36,7 +54,7 @@ public class SearchActivity extends AppCompatActivity {
             }
         });
 
-
+        /*
 
         if(savedInstanceState == null){
             getSupportFragmentManager()
@@ -44,6 +62,8 @@ public class SearchActivity extends AppCompatActivity {
                     .add(R.id.fragmentArea, new CarroFragment())
                     .commit();
         }
+
+        */
 
     }
 }
