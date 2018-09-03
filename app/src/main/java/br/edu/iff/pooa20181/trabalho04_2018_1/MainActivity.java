@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.btnSearch = findViewById(R.id.btnCarro);
+        this.btnSearch = findViewById(R.id.btnSearch);
 
         this.btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
