@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#00ff00">
+    android:background="#d1b181">
 
     <Spinner
         android:id="@+id/yearSpinner"

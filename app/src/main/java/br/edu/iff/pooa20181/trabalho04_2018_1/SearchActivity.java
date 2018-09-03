@@ -44,8 +44,6 @@ public class SearchActivity extends AppCompatActivity {
                             .add(R.id.fragmentArea, new CaminhaoFragment())
                             .commit();
                 }
-
-                Toast.makeText(SearchActivity.this,"Selecionou: "+position,Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -53,17 +51,5 @@ public class SearchActivity extends AppCompatActivity {
 
             }
         });
-
-        /*
-
-        if(savedInstanceState == null){
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(R.id.fragmentArea, new CarroFragment())
-                    .commit();
-        }
-
-        */
-
     }
 }
